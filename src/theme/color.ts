@@ -5,4 +5,5 @@ export default {
   purple: 'rgb(138, 58, 185)',
   darkGray: 'rgb(51, 51, 51)',
   blue: 'rgb(56, 151, 240)',
+  borderColor: 'rgb(217,217,217)',
 };

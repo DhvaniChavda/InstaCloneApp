@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {
+  LogBox,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -10,7 +11,8 @@ import {
   View,
 } from 'react-native';
 import Navigation from 'src/navigation';
-
+LogBox.ignoreAllLogs();
+LogBox.ignoreLogs(['Remote debugger']);
 function App(): React.JSX.Element {
   return (
     <View style={{flex: 1}}>

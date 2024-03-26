@@ -1,3 +1,18 @@
 export default {
   ic_logo: require('./logo.png'),
+  ic_home: require('./ic_home.png'),
+  ic_post: require('./ic_post.png'),
+  ic_profile: require('./ic_profile.png'),
+  ic_search: require('./ic_search.png'),
+  ic_reels: require('./ic_reels.png'),
+  ic_black_home: require('./ic_black_home.png'),
+  ic_black_profile: require('./ic_black_profile.png'),
+  ic_home_logo: require('./ic_home_logo.png'),
+  ic_like: require('./ic_like.png'),
+  ic_chat: require('./ic_chat.png'),
+  ic_profile1: require('./ic_profile1.png'),
+  ic_profile2: require('./ic_profile2.png'),
+  ic_profile3: require('./ic_profile3.png'),
+  ic_profile4: require('./ic_profile4.png'),
+  ic_profile5: require('./ic_profile5.png'),
 };

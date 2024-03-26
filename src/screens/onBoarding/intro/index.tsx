@@ -11,11 +11,18 @@ import styles from './style';
 import {COLOR} from 'src/theme';
 import {IntroToolbar} from 'src/component/custom/toolbar';
 import {STRING} from 'src/utils';
+import {navigate} from 'src/navigation/RootNavigation';
+import {Routes} from 'src/navigation/route';
 
 const Intro = () => {
   const renderButtonContainer = () => {
     return (
-      <TouchableOpacity style={styles.toButton} activeOpacity={0.8}>
+      <TouchableOpacity
+        style={styles.toButton}
+        activeOpacity={0.8}
+        onPress={() => {
+          navigate(Routes.Dashboard);
+        }}>
         <Text style={styles.tLetStart}>{STRING.intro.letStart}</Text>
       </TouchableOpacity>
     );

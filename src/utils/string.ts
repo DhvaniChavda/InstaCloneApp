@@ -1,7 +1,11 @@
+import {APP_IMAGES} from 'src/assets/images';
+import {Routes} from 'src/navigation/route';
+
 export default {
   spalsh: {
     from: 'from',
     meta: 'Meta',
+    press_again: 'Press again to exit app.',
   },
   intro: {
     title: 'Instagram Clone App',
@@ -17,4 +21,37 @@ export default {
     instagram: 'Instagram',
     letStart: `Let's get started`,
   },
+
+  bottomTabData: [
+    {
+      id: 1,
+      icon: APP_IMAGES.ic_home,
+      checked_icon: APP_IMAGES.ic_black_home,
+      route: Routes.HomeScreen,
+    },
+    {
+      id: 2,
+      icon: APP_IMAGES.ic_search,
+      checked_icon: APP_IMAGES.ic_search,
+      route: Routes.SearchScreen,
+    },
+    {
+      id: 3,
+      icon: APP_IMAGES.ic_post,
+      checked_icon: APP_IMAGES.ic_post,
+      route: Routes.PostScreen,
+    },
+    {
+      id: 4,
+      icon: APP_IMAGES.ic_reels,
+      checked_icon: APP_IMAGES.ic_reels,
+      route: Routes.ReelScreen,
+    },
+    {
+      id: 5,
+      icon: APP_IMAGES.ic_profile,
+      checked_icon: APP_IMAGES.ic_black_profile,
+      route: Routes.ProfileScreen,
+    },
+  ],
 };

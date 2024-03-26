@@ -1,0 +1,17 @@
+export default {
+  BILLABONG: 'Billabong',
+  ROBOTO_BOLD: 'Roboto-Bold',
+  ROBOTO_BLACK: 'Roboto-Black',
+  ROBOTO_ITALIC: 'Roboto-Italic',
+  ROBOTO_LIGHT: 'Roboto-Light',
+  ROBOTO_MEDIUM: 'Roboto-Medium',
+  ROBOTO_REGULAR: 'Roboto-Regular',
+  ROBOTO_THIN: 'Roboto-Thin',
+  SANS_BOLD:'OpenSans-Bold',
+  SANS_EXTRABOLD:'OpenSans-ExtraBold',
+  SANS_ITALIC:'OpenSans-Italic',
+  SANS_LIGHT:'OpenSans-Light',
+  SANS_MEDIUM:'OpenSans-Medium',
+  SANS_REGULAR:'OpenSans-Regular',
+  SANS_SEMIBOLD:'OpenSans-SemiBold',
+};

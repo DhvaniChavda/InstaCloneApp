@@ -1,14 +1,12 @@
 import React from 'react';
-import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {Image, StyleSheet, TouchableOpacity, View} from 'react-native';
 import {APP_IMAGES} from 'src/assets/images';
 import {COLOR, FONTS, SIZES} from 'src/theme';
-import {STRING} from 'src/utils';
 
 export default ({}: any) => {
   return (
     <>
       <View style={styles.vRowContainer}>
-        {/* <Text style={styles.tInsta}>{STRING.intro.instagram}</Text> */}
         <View style={styles.vImgContainer}>
           <Image source={APP_IMAGES.ic_home_logo} style={styles.iLogo} />
         </View>

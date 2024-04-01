@@ -1,6 +1,7 @@
 export default {
-  notification: {
-    type1: 0,
-    type2: 1,
+  profile: {
+    gridPost: 0,
+    video: 1,
+    taggedPost: 2,
   },
 };

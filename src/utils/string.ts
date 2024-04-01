@@ -21,6 +21,28 @@ export default {
     instagram: 'Instagram',
     letStart: `Let's get started`,
   },
+  home: {
+    your_story: 'Your Story',
+  },
+  profile: {
+    posts: 'Posts',
+    follwers: 'Follwers',
+    following: 'Following',
+    edit_profile: 'Edit profile',
+    share_profile: 'Share profile',
+    tagged: 'Tagged',
+    manage: 'Manage',
+    liked_by: 'Liked by ',
+    view_all_comments: (comments: number) => `View all ${comments} comments`,
+    comment_are_off: 'Comments are off',
+    review_control: 'Review controls.',
+    follow: 'Follow',
+    likes: (like: number) => `${like} likes`,
+    save: 'Save',
+    qr_code: 'QR code',
+    moving_things: `we're moving thing around!!`,
+    where_to_share: 'see where to share and link',
+  },
 
   bottomTabData: [
     {
@@ -52,6 +74,75 @@ export default {
       icon: APP_IMAGES.ic_profile,
       checked_icon: APP_IMAGES.ic_black_profile,
       route: Routes.ProfileScreen,
+    },
+  ],
+  moreTabList: [
+    {
+      id: 1,
+      image: APP_IMAGES.ic_like,
+      title: 'Share to facebook',
+    },
+    {
+      id: 2,
+      image: APP_IMAGES.ic_smile,
+      title: 'Archieved',
+    },
+    {
+      id: 3,
+      image: APP_IMAGES.ic_like_feel,
+      title: 'Hide commenting',
+    },
+    {
+      id: 4,
+      image: APP_IMAGES.ic_comment,
+      title: 'Turm off commenting',
+    },
+    {
+      id: 5,
+      image: APP_IMAGES.ic_smile,
+      title: 'Turn off commenting',
+    },
+    {
+      id: 6,
+      image: APP_IMAGES.ic_reels,
+      title: 'Create reel from this post',
+    },
+    {
+      id: 7,
+      image: APP_IMAGES.ic_edit,
+      title: 'Edit',
+    },
+    {
+      id: 7,
+      image: APP_IMAGES.ic_share_posts,
+      title: 'Pin your profile',
+    },
+    {
+      id: 8,
+      image: APP_IMAGES.ic_search,
+      title: 'Delete',
+    },
+  ],
+  moreTabTaggedList: [
+    {
+      id: 1,
+      image: APP_IMAGES.ic_like,
+      title: `why you're seeing this post`,
+    },
+    {
+      id: 2,
+      image: APP_IMAGES.ic_tagged_post,
+      title: 'Tag options...',
+    },
+    {
+      id: 3,
+      image: APP_IMAGES.ic_profile,
+      title: 'About this account',
+    },
+    {
+      id: 4,
+      image: APP_IMAGES.ic_carasoul,
+      title: 'Report',
     },
   ],
 };

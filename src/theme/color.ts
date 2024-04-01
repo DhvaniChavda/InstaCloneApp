@@ -6,4 +6,9 @@ export default {
   darkGray: 'rgb(51, 51, 51)',
   blue: 'rgb(56, 151, 240)',
   borderColor: 'rgb(217,217,217)',
+  lightGray: '#ccc',
+  whiteFourteen: 'rgb(245, 245, 245)',
+  tintGrayColor: 'rgb(128,128,128)',
+  navy_blue: 'rgb(0,0,128)',
+  red: 'rgb(255,0,0)',
 };

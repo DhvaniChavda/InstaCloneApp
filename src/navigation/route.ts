@@ -7,4 +7,5 @@ export const Routes = {
   ReelScreen: 'ReelScreen',
   SearchScreen: 'SearchScreen',
   Dashboard: 'Dashboard',
+  PostDetails: 'PostDetails',
 };

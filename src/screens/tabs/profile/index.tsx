@@ -18,7 +18,7 @@ import {StoryHighlightItem} from 'src/component/custom/item';
 import GridPost from 'src/screens/tabs/profile/gridPost';
 import Video from 'src/screens/tabs/profile/video';
 import TaggedPost from 'src/screens/tabs/profile/taggedPost';
-import {navigate} from 'src/navigation/RootNavigation';
+import {goBack, navigate} from 'src/navigation/RootNavigation';
 import {Routes} from 'src/navigation/route';
 
 const ProfileScreen = () => {
@@ -59,6 +59,9 @@ const ProfileScreen = () => {
       data: taggedPostList,
       isPostClickFromGrid: false,
     });
+  };
+  const onSettingPress = () => {
+    navigate(Routes.Setting);
   };
   const renderFollwerContainer = () => {
     return (
@@ -252,7 +255,10 @@ const ProfileScreen = () => {
           showsVerticalScrollIndicator={false}
           style={{backgroundColor: COLOR.white}}
           bounces={false}>
-          <ProfileToolbar user_id={profileData.user_id} />
+          <ProfileToolbar
+            user_id={profileData.user_id}
+            onSettingPress={onSettingPress}
+          />
           {renderFollwerContainer()}
           {renderBioContainer()}
           {renderButtonContainer()}

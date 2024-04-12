@@ -31,4 +31,6 @@ export default {
   ic_more_vertical: require('./ic_more_vertical.png'),
   ic_edit: require('./ic_edit.png'),
   ic_switch: require('./ic_switch.png'),
+  ic_next_arrow: require('./ic_next_arrow.png'),
+  ic_verified: require('./ic_verified.png'),
 };

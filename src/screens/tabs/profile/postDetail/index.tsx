@@ -22,6 +22,8 @@ const PostDetails = ({route}: IPostDetailProps) => {
   const onBackPress = () => {
     goBack();
   };
+ 
+
   const onCloseMoreModal = () => {
     setIsMoreModalOpen(false);
   };
@@ -75,6 +77,7 @@ const PostDetails = ({route}: IPostDetailProps) => {
         }
         isPostClickFromGrid={route.params.isPostClickFromGrid}
         onBackPress={onBackPress}
+        
       />
       <View style={styles.vMainContainer}>{renderListContainer()}</View>
       {isMoreModalOpen && (

@@ -5,8 +5,9 @@ import {COLOR, FONTS, SIZES} from 'src/theme';
 import {DUMMYSTRING} from 'src/utils';
 interface iProfileToolBar {
   user_id: any;
+  onSettingPress: () => void;
 }
-export default ({user_id}: iProfileToolBar) => {
+export default ({user_id, onSettingPress}: iProfileToolBar) => {
   return (
     <View style={styles.vMain}>
       <TouchableOpacity style={styles.toRowCotanier} activeOpacity={0.6}>
@@ -19,7 +20,7 @@ export default ({user_id}: iProfileToolBar) => {
         <TouchableOpacity activeOpacity={0.6}>
           <Image source={APP_IMAGES.ic_post} style={styles.iPost} />
         </TouchableOpacity>
-        <TouchableOpacity activeOpacity={0.6}>
+        <TouchableOpacity activeOpacity={0.6} onPress={onSettingPress}>
           <Image
             source={APP_IMAGES.ic_more}
             style={[styles.iPost, {marginLeft: SIZES.countPixelRatio(15)}]}

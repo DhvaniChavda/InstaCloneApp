@@ -15,6 +15,8 @@ import {BackHandler, ToastAndroid} from 'react-native';
 import {STRING} from 'src/utils';
 import CustomTabBar from 'src/navigation/custom_tab_bar';
 import PostDetails from 'src/screens/tabs/profile/postDetail';
+import Setting from 'src/screens/tabs/profile/setting';
+import VideoDetailScreen from 'src/screens/tabs/profile/video/videoDetail';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -137,6 +139,11 @@ export default (): JSX.Element | null => {
         <Stack.Screen name={Routes.Intro} component={Intro} />
         <Stack.Screen name={Routes.Dashboard} component={TabComponent} />
         <Stack.Screen name={Routes.PostDetails} component={PostDetails} />
+        <Stack.Screen name={Routes.Setting} component={Setting} />
+        <Stack.Screen
+          name={Routes.VideoDetailScreen}
+          component={VideoDetailScreen}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

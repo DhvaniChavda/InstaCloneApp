@@ -2,7 +2,6 @@ import React, {useRef, useState} from 'react';
 import {
   FlatList,
   Image,
-  ImageBackground,
   StyleSheet,
   Text,
   TouchableOpacity,
@@ -13,10 +12,9 @@ import {PostImagesItem} from 'src/component/custom/item';
 import {COLOR, FONTS, SIZES} from 'src/theme';
 import {METHOD, STRING} from 'src/utils';
 
-interface IPostDetailProps {
+interface IFollowerPostProps {
   item: any;
   index: number;
-  isPostClickFromGrid: boolean;
   onLikeClick: (index: number) => void;
   onMoreClick: (index: number) => void;
   onProfileClick: () => void;
@@ -24,13 +22,12 @@ interface IPostDetailProps {
 export default ({
   item,
   index,
-  isPostClickFromGrid,
   onLikeClick,
   onMoreClick,
   onProfileClick,
-}: IPostDetailProps) => {
+}: IFollowerPostProps) => {
   const [postLen, setPostLen] = useState<number>(item.gridImages.length);
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState<number>(0);
 
   const flatListRef = useRef(null);
 
@@ -39,7 +36,6 @@ export default ({
       setActiveIndex(viewableItems[0].index || 0);
     }
   };
-
   const renderProfileContainer = () => {
     return (
       <View style={styles.vTopRowContainer}>
@@ -47,22 +43,15 @@ export default ({
           activeOpacity={0.6}
           style={{flexDirection: 'row', flex: 1}}
           onPress={onProfileClick}>
-          <Image
-            source={{uri: item.userData.profile_image}}
-            style={styles.iProfile}
-          />
+          <Image source={{uri: item.profile_image}} style={styles.iProfile} />
           <View>
-            <Text style={styles.tUserId}>{item.userData.user_id}</Text>
+            <Text style={styles.tUserId}>{item.user_id}</Text>
             {item.location && (
               <Text style={styles.tLocation}>{item.location}</Text>
             )}
           </View>
         </TouchableOpacity>
-        {!isPostClickFromGrid && (
-          <TouchableOpacity activeOpacity={0.6} style={styles.toFollow}>
-            <Text style={styles.tFollow}>{STRING.profile.follow}</Text>
-          </TouchableOpacity>
-        )}
+
         <TouchableOpacity
           activeOpacity={0.6}
           onPress={() => onMoreClick(index)}>
@@ -149,19 +138,13 @@ export default ({
   const renderDescContainer = () => {
     return (
       <View style={styles.vDescContainer}>
-        {isPostClickFromGrid ? (
-          <Text style={styles.tLikeBy}>
-            {STRING.profile.liked_by}
-            <Text style={styles.tLikeByOther}>{item.liked_by}</Text>
-          </Text>
-        ) : (
-          <Text style={styles.tLikeByOther}>
-            {STRING.profile.likes(item.total_likes)}
-          </Text>
-        )}
+        <Text style={styles.tLikeByOther}>
+          {STRING.profile.likes(item.total_likes)}
+        </Text>
+
         <Text
           style={[styles.tLikeByOther, {marginVertical: SIZES.smartScale(5)}]}>
-          {item.userData.user_id}
+          {item.user_id}
           <Text style={styles.tLikeBy}> {item.caption}</Text>
         </Text>
         {item.iscomment_on ? (

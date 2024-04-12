@@ -13,12 +13,13 @@ import {COLOR, FONTS, SIZES} from 'src/theme';
 interface IVideoProps {
   item: any;
   index: number;
+  onVideoClick: () => void;
 }
-export default ({item, index}: IVideoProps) => {
+export default ({item, index, onVideoClick}: IVideoProps) => {
   console.log('IVideoProps itemssssss>>>>>>', item);
 
   return (
-    <TouchableOpacity activeOpacity={0.6}>
+    <TouchableOpacity activeOpacity={0.6} onPress={onVideoClick}>
       <ImageBackground source={{uri: item.thumbnail}} style={styles.iGridImg}>
         <View style={styles.vRowContainer}>
           <Image source={APP_IMAGES.ic_video} style={styles.icarasoul} />

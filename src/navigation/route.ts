@@ -8,4 +8,6 @@ export const Routes = {
   SearchScreen: 'SearchScreen',
   Dashboard: 'Dashboard',
   PostDetails: 'PostDetails',
+  Setting: 'Setting',
+  VideoDetailScreen: 'VideoDetailScreen',
 };

@@ -5,3 +5,7 @@ export {default as TaggedPostItem} from './taggedPostItem';
 export {default as VideoPostItem} from './videoPostItem';
 export {default as PostDetailItem} from './postDetailItem';
 export {default as MoreTabItem} from './moreTabItem';
+export {default as PostImagesItem} from './postImagesItem';
+export {default as SettingItem} from './settingItem';
+export {default as FollowersPostItem} from './followersPostItem';
+export {default as ReelsItem} from './reelsItem';

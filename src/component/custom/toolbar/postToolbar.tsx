@@ -5,7 +5,7 @@ import {COLOR, FONTS, SIZES} from 'src/theme';
 import {DUMMYSTRING, STRING} from 'src/utils';
 interface iPostToolBar {
   title: string;
-  isPostClickFromGrid: boolean;
+  isPostClickFromGrid?: boolean;
   onBackPress: () => void;
 }
 export default ({title, isPostClickFromGrid, onBackPress}: iPostToolBar) => {

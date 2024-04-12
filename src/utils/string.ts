@@ -1,5 +1,6 @@
 import {APP_IMAGES} from 'src/assets/images';
 import {Routes} from 'src/navigation/route';
+import dummy_string from 'src/utils/dummy_string';
 
 export default {
   spalsh: {
@@ -43,7 +44,24 @@ export default {
     moving_things: `we're moving thing around!!`,
     where_to_share: 'see where to share and link',
   },
-
+  setting: {
+    setting_ativity: 'Setting and Activity',
+    search: 'Search',
+    your_account: 'Your Account',
+    meta: 'Meta',
+    security_info: 'password, security, personal detail, ads',
+    dummy_info:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    account_center: 'Account center',
+    how_to_use: 'How to use instagram',
+    who_can_see_your_ac: 'Who can see your content',
+    how_other: 'How others can interact with you',
+    what_you_see: 'What you see',
+    your_app: 'Your app and media',
+    for_proffesional: 'For proffesionals',
+    your_order: 'Your orders and fundrasaisers',
+    more_info: 'More info and support',
+  },
   bottomTabData: [
     {
       id: 1,

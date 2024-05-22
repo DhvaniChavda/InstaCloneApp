@@ -74,7 +74,6 @@ const SearchScreen = () => {
                       styles.image,
                       {
                         height: item.height,
-                        // borderRadius: 20,
                       },
                     ]}
                   />
@@ -83,13 +82,10 @@ const SearchScreen = () => {
             </View>
           )}
           numColumns={3}
-          // columnWrapperStyle={{columnGap: 15}}
           columnWrapperStyle={{
             justifyContent: 'space-between',
             columnGap: 5,
-            // paddingHorizontal: 15,
           }}
-          // style={{marginHorizontal: 15}}
           showsVerticalScrollIndicator={false}
         />
       </View>

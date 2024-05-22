@@ -1,5 +1,5 @@
 
-# Brief about Insta-clone App
+# Description Insta-clone App
 
 Hello everyone, I tried to create Insta clone app. It is a mobile application developed using React Native, The current version showcases the user interface with static data, Some features are also missing here.
 
